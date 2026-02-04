@@ -5,9 +5,10 @@
     <script>
         function validationform(){
            var name = document.getElementById("name").value;
+           var surname=document.getElementById("surname").value;
            var email = document.getElementById("email").value;
            var password = document.getElementById("password").value;
-        if(name == ""|| email == "" || password == ""){
+        if(name == ""|| surname ==""||email == "" || password == ""){
            alert("All fields are required!");
            return false;
         }else{
@@ -21,6 +22,7 @@
 <h2>Event Registration form </h2>
 <form>
 name : <input type = "text"id = "name"><br><br>
+    surname:<input type ="text" id="surname"><br><br>
     email : <input type = "email"id = "email"><br><br>
     password : <input type = "password"id = "password"><br><br>
     <input type="submit" value="Register">
